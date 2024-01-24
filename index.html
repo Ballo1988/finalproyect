@@ -3,19 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Proyecto Final</title>
+    <link rel="stylesheet" href="./css/style.css"> 
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <nav>
         <ul>
-            <li class="logo">LOGO</li>
-            <li class="items"><a href="#">Perfil</a></li>
-            <li class="items"><a href="#">Vehículo</a></li>
-            <li class="items"><a href="#">Historial</a></li>
-            <li class="items"><a href="#">Reportes</a></li>
-            <li class="items"><a href="#">Agencia</a></li>
+            <li class="logo">Magic Travels</li>
+            <li class="items"><a href="#">Get Started</a></li>
+            <li class="items"><a href="./view/contact/index.html">Contact</a></li>
+            <li class="items"><a href="./view/hotels/index.html">See Our Hotels</a></li>
+            <li class="items"><a href="#">Meet New Places</a></li>
+            <li class="items"><a href="#">Travel</a></li>
+            <li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
         </ul>
     </nav>
+    <!-- carrusel de bootstrap -->
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://images.unsplash.com/photo-1705518648497-e4ea72bcb27d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHx8" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">    
+                <h5>Look at the most haunted forests!</h5>
+                <span>Just terryfing!</span>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1519417836265-a245dc27ef52?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHdoaXRlJTIwd2l0Y2h8ZW58MHx8MHx8fDA%3D" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Amazing sights!</h5>
+                <span>And charged with color!</span>    
+            </div>
+        </div>
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1571917368822-5f6625c223b2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8aGF1bnRlZCUyMGZvcmVzdHxlbnwwfHwwfHx8MA%3D%3D" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Feeling that you can't escape?</h5>
+                <span>Of course you can't!</span>
+            </div>
+        </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!--TARJETAS-->
+      <div class="card-list">
+
+        <a href="#" class="card-item">
+            <img src="https://images.unsplash.com/photo-1575918739118-f6587bd0aaff?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8d2hpdGUlMjB3aXRjaHxlbnwwfHwwfHx8MA%3D%3D">
+            <span class="developer">Wallaquia Forest</span>
+            <h3>Travel Now</h3>
+            <div class="arrow">
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+        </a>
+
+        <a href="#" class="card-item">
+            <img src="https://media.istockphoto.com/id/1461790168/es/foto/vieja-escoba-de-ramita-de-barrido-parada-en-la-esquina-de-una-habitaci%C3%B3n.webp?b=1&s=170667a&w=0&k=20&c=7n8rKg9LFh1FtjXBqeVIH34q-fJ4cKk7svnyF55tdGs=">
+            <span class="designer">Sublime</span>
+            <h3>Mira la galería!</h3>
+            <div class="arrow">
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+        </a>
+
+        <a href="#" class="card-item">
+            <img src="https://images.unsplash.com/photo-1521133573892-e44906baee46?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHdoaXRlJTIwd2l0Y2h8ZW58MHx8MHx8fDA%3D">
+            <span class="editor">Things you never though possible</span>
+            <h3>See first hand!</h3>
+            <div class="arrow">
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+        </a>
+    </div>
+    <!--Aqui comienza el footer-->
+<footer>
+    <div class="content">
+      <div class="top">
+        <div class="logo-details">
+          <i class="fab fa-slack"></i>
+          <span class="logo_name">Bedu</span>
+        </div>
+        <div class="media-icons">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+  
+  
+      <div class="link-boxes">
+        <ul class="box">
+          <li class="link-name">Our Company</li>
+          <li><a href="#">Start</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+        <ul class="box">
+          <li class="link-name">Our Services</li>
+          <li><a href="#">Hotels</a></li>
+          <li><a href="#">Paiting</a></li>
+          <li><a href="#">Eco Turism</a></li>
+          <li><a href="#">Photographs</a></li>
+        </ul>
+      </div>
+  
+  
+    </div>
+    <div class="bottom-details">
+      <div class="bottom_text">
+        <span class="copyright_text">Copyright © 2024 <a href="#">Bedu.</a></span>
+        <span class="policy_terms">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms and Conditions</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+  <!--Aqui termina mi footer-->
+    <script src="js/script.js"></script>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </html>
